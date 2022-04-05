@@ -25,7 +25,7 @@ jobs:
     steps:
       - name: Download and test snap
         # uses: canonical/edgex-snap-testing/test@v2
-        uses: MonicaisHer/edgex-snap-testing/build@EDGEX-409-create-device-rest-testing-suite
+        uses: MonicaisHer/edgex-snap-testing/test@EDGEX-409-create-device-rest-testing-suite
         with:
           name: device-rest
           snap: ${{needs.build.outputs.snap}}
